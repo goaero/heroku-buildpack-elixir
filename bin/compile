@@ -25,9 +25,11 @@ source ${build_pack_path}/lib/app_funcs.sh
 echo "################### DEBUGGING COMPILE"
 pwd
 echo "#"
-${build_pack_path}
+echo ${build_pack_path}
 echo "#"
 ls
+echo "#"
+ls /app
 echo "#"
 env
 echo "################### DEBUGGING COMPILE"
