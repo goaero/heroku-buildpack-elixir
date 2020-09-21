@@ -21,16 +21,11 @@ source ${build_pack_path}/lib/misc_funcs.sh
 source ${build_pack_path}/lib/erlang_funcs.sh
 source ${build_pack_path}/lib/elixir_funcs.sh
 source ${build_pack_path}/lib/app_funcs.sh
-[ -e "${build_pack_path}/export" ] && source "${build_pack_path}/export"
+[ -e "${build_path}/export" ] && source "${build_path}/export"
 echo "################### DEBUGGING COMPILE"
-pwd
+echo ${build_path}
 echo "#"
-echo ${build_pack_path}
-echo "#"
-ls -lha
-echo "#"
-ls -lha /app
-echo "#"
+ls -lha ${build_path}
 env
 echo "################### DEBUGGING COMPILE"
 
