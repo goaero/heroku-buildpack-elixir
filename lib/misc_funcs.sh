@@ -26,12 +26,6 @@ function load_config() {
 
   local custom_config_file="${build_path}/elixir_buildpack.config"
 
-  echo "DEBUGGING LOAD CONFIG"
-  ls -lha
-  ls -lha ${build_path}
-  cat $custom_config_file
-  echo "DEBUGGING LOAD CONFIG"
-
   # Source for default versions file from buildpack first
   source "${build_pack_path}/elixir_buildpack.config"
 
@@ -51,9 +45,6 @@ function load_config() {
 
 
 function export_env_vars() {
-  echo "DEBUGING ENV VARS"
-  ls -lha
-  echo "DEBUGING ENV VARS"
   whitelist_regex=${2:-''}
   blacklist_regex=${3:-'^(PATH|GIT_DIR|CPATH|CPPATH|LD_PRELOAD|LIBRARY_PATH)$'}
   if [ -d "$env_path" ]; then
