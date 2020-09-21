@@ -45,6 +45,9 @@ function load_config() {
 
 
 function export_env_vars() {
+  echo "DEBUGING ENV VARS"
+  ls -lha
+  echo "DEBUGING ENV VARS"
   whitelist_regex=${2:-''}
   blacklist_regex=${3:-'^(PATH|GIT_DIR|CPATH|CPPATH|LD_PRELOAD|LIBRARY_PATH)$'}
   if [ -d "$env_path" ]; then

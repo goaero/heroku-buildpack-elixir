@@ -27,9 +27,9 @@ pwd
 echo "#"
 echo ${build_pack_path}
 echo "#"
-ls
+ls -lha
 echo "#"
-ls /app
+ls -lha /app
 echo "#"
 env
 echo "################### DEBUGGING COMPILE"
