@@ -22,6 +22,15 @@ source ${build_pack_path}/lib/erlang_funcs.sh
 source ${build_pack_path}/lib/elixir_funcs.sh
 source ${build_pack_path}/lib/app_funcs.sh
 [ -e "${build_pack_path}/export" ] && source "${build_pack_path}/export"
+echo "################### DEBUGGING COMPILE"
+pwd
+echo "#"
+${build_pack_path}
+echo "#"
+ls
+echo "#"
+env
+echo "################### DEBUGGING COMPILE"
 
 mkdir $(platform_tools_path)
 
